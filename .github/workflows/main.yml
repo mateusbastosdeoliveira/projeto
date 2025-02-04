@@ -48,7 +48,7 @@ jobs:
       - name: Upload
         uses: actions/upload-pages-artifact@v3
         with:
-            path: "doc/wwwroot"
+            path: 'docs/wwwroot'
 
       - name: Deploy
         id: deployment
