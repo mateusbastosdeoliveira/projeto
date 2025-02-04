@@ -1,0 +1,27 @@
+﻿@page "/satisfeito"
+@inject NavigationManager Navegacao
+
+
+
+<div class="container-fluid  d-flex align-items-center justify-content-center">
+	<img class=" " src="goku.gif" />
+</div>
+<br />
+
+<div class="container-fluid row text-center d-flex bg-black ">
+	<h1 class="text-warning">Obrigado, chefe</h1>  
+	<h2 class="text-white">Novas atualizações:</h2>
+	<div class="d-flex justify-content-center"><p class="p-2 text-white fs-4">Produtividade</p><p class="text-success p-2 fs-4 ">+ 8%</p></div>
+	<div class="d-flex justify-content-center"><p class="p-2 text-white fs-4">Gratidão</p><p class="text-success p-2 fs-4 ">+ 12%</p></div>
+	<div class="d-flex justify-content-center"><p class="p-2 text-white fs-4">Vontade de se demitir</p><p class="text-danger p-2 fs-4 ">- 15%</p></div>
+	<div class="d-flex justify-content-center"><p class="p-2 text-white fs-4">Mau-humor</p><p class="text-danger p-2 fs-4 ">- 15%</p></div>
+
+</div>
+
+<br />
+<div class="w-100  text-center"><button @onclick=voltar class="btn btn-primary">Voltar</button></div>
+@code {
+	public void voltar(){
+		Navegacao.NavigateTo("/");
+	}
+}
